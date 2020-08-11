@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.globalHeader{
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid red;
+
+}

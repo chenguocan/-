@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#E5E5E5;
+}
+.globalHeader{
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid red;
+}
+.globalHeader > input{
+    max-width: 100px;
+    border: none;
+    border-radius: 2px;
+    background: #C4C4C4;
+}
