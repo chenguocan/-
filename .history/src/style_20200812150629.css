@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#E5E5E5;
+}
+ul>li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.searchForm {
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.globalHeader >.searchForm > input{
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 2px;
+    background: #C4C4C4;
+    padding-left: 10px;
+}
+@media(min-width:500px){
+    .searchForm{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.globalHeader >.searchForm> .searchButton{
+    display: flex;
+    white-space: nowrap;
+    border: none;
+    color:white;
+    margin-left: 20px;
+    background:#0F4FF3;
+    border-radius:4px;
+    padding:0 20px;
+}
+.siteList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 20px;
+    border:1px solid red;
+}
+@media (min-width:500px){
+    .siteList{
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: flex-start;
+    }
+}
+.siteList .siteBox,.addButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 146px;
+    width: 160px;
+    margin-bottom: 10px;
+    background:#FFFFFF;
+}
+@media(min-width:500px){
+    .siteList .siteBox,.addButton{
+        margin-right: 25px;
+    }
+}
+.siteList .siteBox>.logo{
+    font-size: 64px;
+}
+.siteList .siteBox>.site{
+    font-size:16px;
+}
+.siteBox{
+    position: relative;
+    border:1px solid red;
+}
+.delete{
+    border:1px solid red;
+    display: inline-block;
+    position: absolute;
+    right: ;: 0;
+    top: 0;
+}
+.delete>.icon{
+    width: 30px;
+    height: 30px;
+}
+.siteList .site:hover>.delete{
+    display: block;
+}

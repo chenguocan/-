@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#E5E5E5;
+}
+ul>li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.searchForm {
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.globalHeader >.searchForm > input{
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 2px;
+    background: #C4C4C4;
+    padding-left: 10px;
+}
+.globalHeader >.searchForm> .searchButton{
+    display: flex;
+    white-space: nowrap;
+    border: none;
+    color:white;
+    margin-left: 20px;
+    background:#0F4FF3;
+    border-radius:4px;
+    padding:0 20px;
+}
+.siteList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:0 20px;
+}
+.siteList .siteBox,.addButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 146px;
+    width: 137px;
+    margin-bottom: 10px;
+    background:#FFFFFF;
+}
+.siteList .siteBox>.logo{
+    font-size: 64px;
+}
+.siteList .siteBox>.site{
+    font-size:16px;
+}
+.delete{
+    position: relative;
+}
+.delete>svg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top:0px; 
+}
+.delete{
+    display: none;
+}
+.siteBox{
+    border: 1px solid red;
+}
+.siteList .siteBox:hover >.siteList .delete>svg{
+    display: block;
+  }
